@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #12284C;
+  --color-accent: #FF4438;
+
+  --color-primary-d1: #0F213E;
+  --color-primary-d2: #0C1A31;
+  --color-primary-l1: #152E57;
+  --color-primary-l2: #173463;
+  --color-primary-l3: #1A3B6F;
+  --color-primary-l4: #1D417C;
+
+  --color-accent-d1: #EB0E00;
+  --color-accent-d2: #FF1405;
+  --color-accent-l1: #FF5C52;
+  --color-accent-l2: #FF746B;
+  --color-accent-l3: #FF8C85;
+  --color-accent-l4: #FFA49E;
+}
+
+@layer utilities {
+  .font-CADT-Mono {
+    font-family: "CADT Mono Display";
+  }
+
+  .font-Niradei {
+    font-family: "Niradei";
+  }
+}
+/* 
+@font-face {
+    font-family: "Niradei Bold";
+    font-display: swap;
+    src: url("https://www.cadt.edu.kh/wp-content/uploads/et-fonts/Niradei-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Niradei";
+    font-display: swap;
+    src: url("https://www.cadt.edu.kh/wp-content/uploads/et-fonts/Niradei-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "CADT Mono Display";
+    font-display: swap;
+    src: url("https://www.cadt.edu.kh/wp-content/uploads/et-fonts/CADTMonoDisplay-Regular.ttf") format("truetype");
+} */
+
+@font-face {
+  font-family: "Niradei";
+  font-display: swap;
+  src: url("https://www.cadt.edu.kh/wp-content/uploads/et-fonts/Niradei-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Niradei";
+  font-display: swap;
+  src: url("https://www.cadt.edu.kh/wp-content/uploads/et-fonts/Niradei-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CADT Mono Display";
+  font-display: swap;
+  src: url("https://www.cadt.edu.kh/wp-content/uploads/et-fonts/CADTMonoDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@layer components {
+  ol > li {
+    @apply hover:text-accent;
+  }
+  body {
+    @apply bg-primary
+  }
+
+  .bg-color-white{background-color: #FFF}
+  .bg-color-light{background-color: #F2F2F2}
+  .bg-color-dark{background-color: #E6E6E6} 
+  .text-color-dark{ @apply text-primary}
+  .text-color-light{color: #F2F2F2}
+  .text-color-dark-muted{color: #4D4D4D}
+  .text-color-light-muted{color: #B3B3B3}
+
+  .text-header-1 { font-family: "Niradei"; @apply  font-bold text-[32px] uppercase}
+  .text-header-2 { font-family: "Niradei"; @apply font-bold text-[24px]}
+  .text-body-1 { font-family: "Niradei"; @apply  text-[20px]}
+  .text-body-2 { font-family: "Niradei"; @apply  text-[16px]}
+  .text-button { font-family: "Niradei"; @apply  font-bold text-[20px] uppercase}
+  
+}
+
+*{
+  @apply transition-colors duration-100;
+}
+
+.about-us-card-words
+{
+    @apply w-full h-[187px]
+}
