@@ -1,10 +1,15 @@
+:root{
+  --outer-cut: 25px;
+  --inner-cut: 23px;
+}
+
 
 .clip-border {
-  clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, calc(100% - var(--outer-cut)) 0, 100% var(--outer-cut), 100% 100%, 0 100%);
 }
 
 .clip-inner {
-  clip-path: polygon(0 0, calc(100% - 38px) 0, 100% 38px, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, calc(100% - var(--inner-cut)) 0, 100% var(--inner-cut), 100% 100%, 0 100%);
 }
 
 div.acet-btn{

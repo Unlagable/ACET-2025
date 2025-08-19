@@ -88,10 +88,10 @@
   .text-color-dark-muted{color: #4D4D4D}
   .text-color-light-muted{color: #B3B3B3}
 
-  .text-header-1 { font-family: "Niradei"; @apply  font-bold text-[32px] uppercase}
-  .text-header-2 { font-family: "Niradei"; @apply font-bold text-[24px]}
-  .text-body-1 { font-family: "Niradei"; @apply  text-[20px]}
-  .text-body-2 { font-family: "Niradei"; @apply  text-[16px]}
+  .text-header-1 { font-family: "Niradei"; @apply  font-bold text-[16px] md:text-[32px] uppercase}
+  .text-header-2 { font-family: "Niradei"; @apply font-bold text-[14px] md:text-[24px]}
+  .text-body-1 { font-family: "Niradei"; @apply  text-[12px] md:text-[20px]}
+  .text-body-2 { font-family: "Niradei"; @apply  text-[10px] md:text-[16px]}
   .text-button { font-family: "Niradei"; @apply  font-bold text-[20px] uppercase}
   
 }

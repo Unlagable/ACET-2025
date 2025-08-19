@@ -8,6 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: 'ACET-2025/'
+  base: '/ACET-2025/'
   
 })
