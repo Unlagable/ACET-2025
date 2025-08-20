@@ -16,6 +16,8 @@ import FAQ from './components/faq/FAQ'
 import ContactUs from './components/contact us/Contact Us'
 import ExploreACET from './components/explore acet/Explore ACET'
 import Footer from './components/footer/Footer'
+import Publication from './components/publication/Publication'
+import Gallery from './components/gallery/Gallery'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,17 +28,32 @@ function App() {
       <Hero/>
       <hr className='text-white relative'/>
       <About/>
-      {/* <Button text="Testing"/> */}
       <ResearchTrack/>
       <ConferenceJourney/>
+
+
+      {/* publication here */}
+      <Publication/>
+
       <Submission/>
       <Committees />
       <Venue/>
+
+      {/* agenda here */}
+
+
       <Sponsor/>
+
+      {/* Gallery here */}
+      <Gallery/>
+
+
       <FAQ/>
       <ContactUs/>
       <ExploreACET/>
       <Footer/>
+
+
       {/* <div className='h-50 w-full bg-white'></div> */}
       {/* <div class='h-screen '></div> */}
     </>

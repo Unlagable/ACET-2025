@@ -23,7 +23,7 @@ export default function ConferenceJourney() {
     Date:"13rd-14th November 2025"} 
 
     return (
-        <div className='hidden md:block'>
+    <div className='hidden md:block'>
         <h1 className="text-header-1 text-color-light pl-16 my-8 leading-[140%] ">Conference Journey</h1>
         
         {/* center indicator line */}
@@ -32,7 +32,7 @@ export default function ConferenceJourney() {
         
             <div className='absolute flex justify-center w-full top-35 h-auto'>
 
-                <div className='w-0 border-1 h-[16px] border-white absolute top-1'></div>
+                <div className='w-0 border-1 h-[1650px] border-white absolute top-1'></div>
                 <div className='w-0 border-1 h-[322px] border-accent absolute top-1'></div>
 
                 <div className='circle w-10 h-10 rounded-full bg-primary absolute border-2 border-accent'>
@@ -263,5 +263,6 @@ export default function ConferenceJourney() {
             </div>
             {/* end of card 6 */}
         </div>
-    </div>)
+    </div>
+    )
 }
