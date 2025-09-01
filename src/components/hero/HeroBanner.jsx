@@ -48,7 +48,7 @@ const Hero = () =>  {
                         </div>
                     </div>
                     <div className='flex justify-center my-4'>
-                        <AcetButton text="Submit"/>
+                        <AcetButton text="Submit Paper"/>
                     </div>
 
 
@@ -67,16 +67,16 @@ const Hero = () =>  {
                 </div>
 
                 
-                <div className='abosolut'>
-                    <img src={brandElem} alt="" className='absolute w-64 right-0 bottom-0 rotate-180'/>
-                    <img src={brandElem} alt="" className='absolute w-42 right-28  bottom-0 rotate-180'/>
-                    <img src={brandElem} alt="" className='absolute w-30 right-48 bottom-0 rotate-180'/>
+                <div className='block'>
+                    <img src={brandElem} alt="" className='absolute w-52 right-0 bottom-0 rotate-180'/>
+                    <img src={brandElem} alt="" className='absolute w-36 right-24  bottom-0 rotate-180'/>
+                    <img src={brandElem} alt="" className='absolute w-24 right-42 bottom-0 rotate-180'/>
                 </div>
-                <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full space-y-16'>
+                <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full space-y-16 '>
                     <img src={AcetLogo} alt="ACET 2025 Logo" className=' ml-2'/>
                     <p className='text-white ml-4 font-Niradei font-bold text-4xl md:w-94 leading-[120%]' >Connecting <span className='text-accent'>ASEAN</span> Researchers for Digital Research</p>
-                    <div className='flex justify-center items-center'>
-                        <AcetButton text="Submit"/>
+                    <div className='flex justify-center items-center '>
+                        <AcetButton text="Submit Paper" />
                     </div>
                 </div>
 

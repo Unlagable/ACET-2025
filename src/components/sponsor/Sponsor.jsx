@@ -10,7 +10,7 @@ export default function Sponsor()
             <div className="grid grid-rows-3 md:grid-rows-1 md:grid-cols-3 text-color-light px-4 space-y-8">
                 <div className='flex flex-col align-center md:items-start'>
                     <h1 className="text-header-1 uppercase">SPONSOR</h1>
-                    <img src={cadtlogo} alt="CADT logo" className='w-10/12 my-auto'/>
+                    <img src={cadtlogo} alt="CADT logo" className='w-10/12 md:w-56 my-auto'/>
                 </div>
                 <div className='flex flex-col align-center md:items-center'>
                     <h1 className="text-header-1 uppercase">SUPPORTER</h1>
@@ -18,7 +18,7 @@ export default function Sponsor()
                 </div>
                 <div className='flex flex-col align-center md:items-end'>
                     <h1 className="text-header-1 uppercase">ORGANIZER</h1>
-                    <img src={idrilogo} alt="CADT logo" className='w-10/12 my-auto'/>
+                    <img src={idrilogo} alt="CADT logo" className='w-10/12 md:w-56 my-auto'/>
                 </div>
             </div>
         </div>

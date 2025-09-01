@@ -6,7 +6,7 @@ import EnvelopeIcon from '../../assets/image/webp/envelope icon.webp'
 export default function ContactUs () {
 
     return(
-        <div className="Contact Section bg-white px-4 py-8 ">
+        <div className="Contact Section bg-color-light px-4 py-8 ">
             <div className='mobile-screen-size md:hidden'>
                 <h1 className="text-primary text-header-1 uppercase">CONTACT US</h1>
                 <div className="grid grid-cols-3 gap-0">

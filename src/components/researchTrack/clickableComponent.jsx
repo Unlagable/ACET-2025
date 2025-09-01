@@ -17,7 +17,8 @@ const ClickableComponent = ({image, title, description}) =>  {
                     src={image} alt="Nutrual Language Process" className={`${!openDetail ? "w-10 md:w-16" : "w-20 md:w-65"} `}/>
 
                     <AnimatePresence> 
-                        ${openDetail && (<motion.div initial={{opacity: 0, y:-50}} animate={{opacity:1, y:0}} translate={{duration:0.3, ease: "easeInOut"}}
+                        ${openDetail && (<motion.div initial={{opacity: 0, y:-50, height:0}} animate={{opacity:1, y:0, Height: '100%'}}
+                        exit={{ opacity: 0, height: 0 }} translate={{duration:0.1, ease: "easeInOut"}}
                         className={`${!openDetail && "hidden"} h-30 md:h-60 w-[0.5px] md:w-[1px] bg-white `} ></motion.div>)}
                     </AnimatePresence>
 

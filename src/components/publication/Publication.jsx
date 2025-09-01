@@ -1,5 +1,6 @@
 import ReactCaroussel from 'react-caroussel';
 import "react-caroussel/dist/index.css";
+import AcetButton from '../button/button';
 
 const books = [
     {
@@ -32,9 +33,10 @@ function Card({title, description, image, descriptionDown}) {
 
                 </div>
                 <img src={image} alt="Publication Image" className='w-full h-auto scale-80 md:scale-110'/>
-                <div className='flex flex-col justify-end items-start'>
+                <div className='flex flex-col justify-end items-start gap-4'>
                     <p className='text-color-light-muted text-body-2'>{descriptionDown}</p>
-                    <button className='bg-accent'>Download</button>
+                    <AcetButton text="Download"/>
+                    {/* <button className='bg-accent'>Download</button> */}
                     
                 </div>
             </div>

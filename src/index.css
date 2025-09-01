@@ -92,7 +92,7 @@
   .text-header-2 { font-family: "Niradei"; @apply font-bold text-[14px] md:text-[24px]}
   .text-body-1 { font-family: "Niradei"; @apply  text-[12px] md:text-[20px]}
   .text-body-2 { font-family: "Niradei"; @apply  text-[10px] md:text-[16px]}
-  .text-button { font-family: "Niradei"; @apply  font-bold text-[20px] uppercase}
+  .text-button { font-family: "Niradei"; @apply  font-bold text-[10px] md:text-[20px] uppercase}
   
 }
 

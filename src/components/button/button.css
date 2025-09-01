@@ -13,6 +13,17 @@
 }
 
 div.acet-btn{
-      transition: width 0.3s ease;
+      transition: transform 0.1s ease-in-out;
+}
+
+div.acet-btn:hover{
+      transform: scale(1.03);
   cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  :root {
+    --inner-cut: 15px;
+  }
 }

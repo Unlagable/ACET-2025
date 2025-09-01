@@ -18,6 +18,7 @@ import ExploreACET from './components/explore acet/Explore ACET'
 import Footer from './components/footer/Footer'
 import Publication from './components/publication/Publication'
 import Gallery from './components/gallery/Gallery'
+import Agenda from './components/agenda/Agenda'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -40,7 +41,9 @@ function App() {
       <Venue/>
 
       {/* agenda here */}
-
+      <Agenda/>
+      
+      {/* sponsor here */}
 
       <Sponsor/>
 

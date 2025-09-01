@@ -9,10 +9,10 @@ export default function ConferenceJourney() {
 
             <div className='line-break h-0.5 w-full bg-white'/>
 
-            <div className='absolute opacity-50 -left-15 w-75 md:w-50'>
+            <div className='absolute opacity-50 -left-15 w-50 md:w-50'>
                 <img src={brandElementsGroup} alt="" />
             </div>
-            <div className='absolute bottom-0 -right-15 rotate-180 opacity-50 w-75 md:w-50'>
+            <div className='absolute bottom-0 -right-15 rotate-180 opacity-50 w-50 md:w-50'>
                 <img src={brandElementsGroup} alt="" className=''/>
         </div>
 

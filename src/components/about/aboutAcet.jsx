@@ -62,7 +62,7 @@ const About = () =>  {
         </div>
 
         {/* mobile about */}
-        <div className="About-Section-Mobile mx-4 my-[32px] md:hidden">
+        <div className="About-Section-Mobile mx-4 my-6 md:hidden">
 
             <div className='relative'>
                 <img src={ImageBanner} alt="" className='Branding-shape'/>
@@ -70,7 +70,7 @@ const About = () =>  {
                     <h1 className='text-header-1 text-color-light'>ABOUT ACET</h1>
                 </div>
             </div>
-            <div className='my-2'>
+            <div className='my-6'>
                 <p className='text-body-1 text-color-light capitalize text-justify'>
                     ASEAN Conference on Emerging Technologies (ACET) focuses on the latest research and Development in digital technology but more specifically on Natural Language Processing (NLP), Data Science, Networking & IoT, Artificial Intelligence (AI). ACET conference aims to connect researchers’ knowledge and Building applications for smarter societies.
                 </p>
@@ -99,7 +99,7 @@ const About = () =>  {
                     </div>
 
                 </div>
-                <div className='grid grid-cols-3 gap-2 text-body-1 text-color-light text-justify mt-2'>
+                <div className='grid grid-cols-3 gap-2 text-body-1 text-color-light text-justify mt-6'>
                     <div className='flex justify-center items-center'>
                         <img src={brandElemGroup} alt="" className='rotate-180 opacity-50 ' />
                     </div>

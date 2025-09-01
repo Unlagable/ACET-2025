@@ -56,7 +56,6 @@ const responsive = {
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
-    slidesToSlide: 3
   }
 };
 
@@ -76,7 +75,7 @@ export default function Gallery (){
                 draggable={true}
                 swipeable={true}
                 showDots={true}
-                arrows={false}
+                arrows={true}
                 className='pb-8 text-accent'
             >
 
