@@ -5,7 +5,7 @@ import AcetButton from '../../components/button/button'
 
 export default function ConferenceJourney() {
     return (<>
-        <div id='Submission-Section ' className='h-screen md:h-auto relative overflow-hidden' style={{backgroundImage: `url(${bgImg})`, backgroundSize: "cover", backgroundPosition: "center"}}>
+        <div id='Submission' className='h-screen md:h-[65vh] relative overflow-hidden md:mx-0 ' style={{backgroundImage: `url(${bgImg})`, backgroundSize: "cover", backgroundPosition: "center"}}>
 
             <div className='line-break h-0.5 w-full bg-white'/>
 
@@ -14,14 +14,14 @@ export default function ConferenceJourney() {
             </div>
             <div className='absolute bottom-0 -right-15 rotate-180 opacity-50 w-50 md:w-50'>
                 <img src={brandElementsGroup} alt="" className=''/>
-        </div>
+            </div>
 
 {/* 
             <h1 className="text-header-1 text-color-light my-8 leading-[140%] text-center">Submission</h1>
 
             <p className='text-color-light text-body-2 mx-auto capitalize text-center w-xs'>to submit your paper for review please follow steps below</p> */}
             
-            <div className='absolute -translate-x-1/2 left-1/2 -translate-1/2 top-1/2 md:static md:translate-0'>
+            <div className='absolute -translate-x-1/2 left-1/2 -translate-1/2 top-1/2 md:static md:translate-0 md:translate-y-10'>
                 <h1 className="text-header-1 text-color-light my-4 md:my-8 leading-[140%] text-center">Submission</h1>
 
                 <p className='text-color-light-muted text-body-2 mx-auto capitalize text-center my-2 md:my-8 w-45 md:w-xs'>to submit your paper for review please follow steps below</p>

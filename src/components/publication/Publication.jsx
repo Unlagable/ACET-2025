@@ -25,14 +25,14 @@ const books = [
 
 function Card({title, description, image, descriptionDown}) {
     return (
-        <div className="card px-4">
+        <div className="card px-4 md:px-8">
             <div className='grid grid-cols-1 md:grid-cols-3 md:grid-rows-1 gap-4 '>
                 <div className='space-y-4'>
                     <h2 className='text-header-2 text-color-light'>{title}</h2>
                     <p className='text-color-light-muted text-body-2 md:w-[90%]'>{description}</p>
 
                 </div>
-                <img src={image} alt="Publication Image" className='w-full h-auto scale-80 md:scale-110'/>
+                <img src={image} alt="Publication Image" className='w-full md:w-4/5 h-auto scale-80 md:scale-110 translate-x-16'/>
                 <div className='flex flex-col justify-end items-start gap-4'>
                     <p className='text-color-light-muted text-body-2'>{descriptionDown}</p>
                     <AcetButton text="Download"/>
@@ -46,7 +46,7 @@ function Card({title, description, image, descriptionDown}) {
 
 export default function Publication() {
     return (
-        <div className="Publication px-4 my-8">
+        <div className="Publication px-4 my-16 mx-16 " id='Publication'>
             <h1 className='text-color-light text-header-1 mb-8'>Publication</h1>
             <ReactCaroussel infinite={true}
             autoplay={true}

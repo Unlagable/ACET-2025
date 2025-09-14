@@ -8,15 +8,15 @@ import brandElemGroup from '../../assets/image/webp/acet group.webp'
 
 const About = () =>  {  
     return (<>
-    <div className='About-Section '>
+    <div className='About-Section md:mx-8 ' id='About'>
         
         <div className='About-Section-Normal hidden md:block'>
 
             
             {/* about acet banner */}
             <div className=' h-auto mt-16 px-8 relative font-Niradei'>
-                <img src={ImageBanner} alt="image of participants of ACET" className='Branding-shape w-full'/>
-                <div className='absolute top-[60%] left-[10%] w-[80%]  leading-[120%] space-y-5' >
+                <img src={ImageBanner} alt="image of participants of ACET" className='Branding-shape w-full lg:h-auto md:h-120 object-cover'/>
+                <div className='absolute top-1/2 xl:top-[60%] lg:top-[55%] left-[10%] w-[80%]  leading-[120%] space-y-5' >
                     <h1 className=' text-white text-[32px] uppercase font-bold' >About ACET</h1>
                     <p className=' text-white text-[20px] leading-[130%]'>ASEAN Conference on Emerging Technologies (ACET) focuses on the latest research and Development in digital technology but more specifically on Natural Language Processing (NLP), Data Science, Networking & IoT, Artificial Intelligence (AI). ACET conference aims to connect researchers’ knowledge and Building applications for smarter societies.</p>
 
@@ -52,7 +52,7 @@ const About = () =>  {
                         <img src={brandElem} alt="" className='absolute w-24 right-34  bottom-0 rotate-180 opacity-60'/>
                         <img src={brandElem} alt="" className='absolute w-36 right-17 bottom-0 rotate-180 opacity-60'/>
                     </div>
-                    <div className='col-span-2 text-white justify-center items-center flex text-justify font-[20px] leading-[140%]'>
+                    <div className='col-span-2 text-white justify-center items-center flex text-justify text-body-2 leading-[140%]'>
                         <p>
                             We Bringing together researchers from local and international communities through a forum for academicians, professionals, and researchers to discuss and exchange research results, innovative ideas, and experiences, fostering advancements in the field.
                         </p>

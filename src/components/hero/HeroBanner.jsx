@@ -10,11 +10,11 @@ import AcetButton from '../button/button'
 
 const Hero = () =>  {  
     return (
-        <div className="Hero-Section">
+        <div className="Hero-Section" id='Home'>
             <div className='bg-primary md:h-screen font-Niradei hidden md:block md:relative '>
 
                 <img src={grBgBoxSm} alt="" className='absolute h-sm bottom-0'/>
-                <img src={grBgBoxLg} alt=""  className='absolute h-screen right-0 bottom-0' />
+                <img src={grBgBoxLg} alt=""  className='absolute w-1/2 right-0 bottom-0 md:h-screen md:w-auto' />
                 
                 {/* top brand elements */}
                 {/* <img src={brandElem} alt="" className='absolute w-64 top-18'/>

@@ -14,8 +14,8 @@ const ResearchTrack = () =>  {
 
 
     return (<>
-        <div className="research-track relative">
-            <h1 className="text-header-1 text-color-light pl-4 md:pl-16 my-2 md:my-8 leading-[140%] ">4 Specifics Research Track</h1>
+        <div className="research-track relative md:mx-0 ">
+            <h1 className="text-header-1 text-color-light pl-4 md:mx-16 my-2 md:my-8 leading-[140%] ">4 Specifics Research Track</h1>
             <div className='research-Track-line h-[1px] w-full bg-white'></div>
         
                 {/* <div className={`${openDetail && "py-16"} ${!openDetail ? "justify-start" : "justify-center"} relative flex px-24 items-center w-auto space-x-16 py-4  hover:cursor-pointer `} onClick={toggleOpenDetail}>

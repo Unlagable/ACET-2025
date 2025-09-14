@@ -73,8 +73,8 @@
 
 
 @layer components {
-  ol > li {
-    @apply hover:text-accent;
+  ul > li {
+    @apply hover:text-accent hover:cursor-pointer;
   }
   body {
     @apply bg-primary
@@ -104,3 +104,5 @@
 {
     @apply w-full h-[187px]
 }
+
+  

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import AcetButton from '../button/button';
 
-const testagenda = [
+const day1 = [
     {
         topic: "Registration & Welcome Coffee",
         speaker: "N/A",
@@ -13,7 +13,27 @@ const testagenda = [
         speaker: "N/A",
         detail: "test detail",
         time: "08:00 - 09:00"
-    }
+    },
+    {
+        topic: "Registration & Welcome Coffee",
+        speaker: "N/A",
+        detail: "test detail",
+        time: "08:00 - 09:00"
+    },
+]
+const day2 = [
+    {
+        topic: "Day 2 Registration & Welcome Coffee",
+        speaker: "N/A",
+        detail: "test detail",
+        time: "08:00 - 09:00"
+    },
+    {
+        topic: "Registration & Welcome Coffee",
+        speaker: "N/A",
+        detail: "test detail",
+        time: "08:00 - 09:00"
+    },
 ]
 
 function AgendaCard({topic, speaker, detail, time}) {
@@ -52,9 +72,13 @@ function AgendaButton({text, active}) {
 
 const Agenda = () => {
     const [active, setActive] = useState(true);
+    const [viewAgenda, setViewAgenda] = useState(false);
+
+    const handleViewAgenda = () => {};
+    const handleDownload = () => {};
 
     return (
-        <div className="agenda">
+        <div className="agenda md:mx-16 " id='Agenda'>
             <h1 className="text-header-1 text-color-light mx-4">Event Agenda</h1>
             <div className="flex mx-4">
                 <div onClick={() => setActive(true)}>
@@ -65,7 +89,8 @@ const Agenda = () => {
                 </div>
             </div>
             <div className='h-[1px] mx-4 bg-white'></div>
-            {testagenda.map((item) => (
+            <div className={`Day-1 ${active && "block"} ${!active && "hidden"} h-62 overflow-hidden ${viewAgenda && "h-auto "}`}>
+            {day1.map((item) => (
                 <>
                 <AgendaCard
                     topic={item.topic}
@@ -76,9 +101,25 @@ const Agenda = () => {
                 </>
             
             ))}
+            </div>
+            <div className={`Day-2 ${!active && "block"} ${active && "hidden"} h-62 overflow-hidden  ${viewAgenda && "h-auto"}`}>
+                {day2.map((item) => (
+                    <>
+                    <AgendaCard
+                        topic={item.topic}
+                        speaker={item.speaker}
+                        detail={item.detail}
+                        time={item.time} />
+                    <div className='h-[1px]  mx-4 bg-white '></div>
+                    </>
+                
+                ))}
+            </div>
 
-            <div className='flex justify-center mx-4 py-4 gap-4 bg-primary-l1'>
-                <ViewAgendaButton text="View Agenda"/>
+            <div className={`flex justify-center mx-4 py-4 gap-4 bg-primary-l1 ${!viewAgenda && "border-t-1 border-white"} `}>
+                <div onClick={() => setViewAgenda(!viewAgenda)}>
+                    <ViewAgendaButton text={viewAgenda ? "Less": "More"}/>
+                </div>
                 <AcetButton text="Download"/>
             </div>
             

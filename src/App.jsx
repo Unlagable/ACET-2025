@@ -19,24 +19,36 @@ import Footer from './components/footer/Footer'
 import Publication from './components/publication/Publication'
 import Gallery from './components/gallery/Gallery'
 import Agenda from './components/agenda/Agenda'
+import TestConfjourney from './components/conferenceJourney/TestConfJour'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <NavBar/>
+
+        <NavBar/>
+
+
+      <div className='container mx-auto '>
       <Hero/>
+      </div>
       <hr className='text-white relative'/>
+
+      <div className='container mx-auto '>
       <About/>
+
       <ResearchTrack/>
       <ConferenceJourney/>
 
 
       {/* publication here */}
       <Publication/>
-
+      </div>
+      
       <Submission/>
+      <div className='container mx-auto '>
       <Committees />
       <Venue/>
 
@@ -49,14 +61,30 @@ function App() {
 
       {/* Gallery here */}
       <Gallery/>
+      </div>
 
 
-      <FAQ/>
-      <ContactUs/>
-      <ExploreACET/>
-      <Footer/>
+      <div className='bg-color-light'>
+        <div className='container mx-auto '>
+          <FAQ/>
+          <ContactUs/>
+          <ExploreACET/>
+        </div>  
+      </div>
 
+      
+      {/* <TestConfjourney/> */}
 
+      <div className='container mx-auto '>
+        <Footer/>
+      </div>
+
+    <Router>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/committees" element={<Committees />} />
+      </Routes>
+    </Router>
       {/* <div className='h-50 w-full bg-white'></div> */}
       {/* <div class='h-screen '></div> */}
     </>

@@ -10,13 +10,13 @@ const ClickableComponent = ({image, title, description}) =>  {
 
 
     return (<>
-        <div className="research-track relative ">
+        <motion.div layout className="research-track relative ">
         
                 <div className={`${openDetail && "md:py-16"} ${!openDetail ? "justify-start" : "justify-center"} relative flex px-4 md:px-24 items-center w-auto space-x-4 md:space-x-8 py-4  hover:cursor-pointer `} onClick={toggleOpenDetail} style={{transition: "width 0.8s, height 0.8s",}}>
                     <motion.img           initial={{ scale: 0, opacity: 0 }} animate={{ scale: openDetail ? 1.1  : 1, opacity: 1 }} transition={{ duration: 0.5 }}
                     src={image} alt="Nutrual Language Process" className={`${!openDetail ? "w-10 md:w-16" : "w-20 md:w-65"} `}/>
 
-                    <AnimatePresence> 
+                    <AnimatePresence > 
                         ${openDetail && (<motion.div initial={{opacity: 0, y:-50, height:0}} animate={{opacity:1, y:0, Height: '100%'}}
                         exit={{ opacity: 0, height: 0 }} translate={{duration:0.1, ease: "easeInOut"}}
                         className={`${!openDetail && "hidden"} h-30 md:h-60 w-[0.5px] md:w-[1px] bg-white `} ></motion.div>)}
@@ -36,14 +36,14 @@ const ClickableComponent = ({image, title, description}) =>  {
                         ${openDetail && (<motion.p
                             initial={{ opacity: 0 ,y:-50}}
                             animate={{ opacity: 1 ,y:0}}
-                            transition={{ duration: 0.5, ease: "easeInOut" }}
-                            exit={{ opacity: 0 }} className={`${!openDetail && 'hidden'} text-body-1 text-color-light`}>{description}</motion.p>)}
+                            transition={{ duration: 0.1, ease: "easeInOut" }}
+                            exit={{ opacity: 0 }} className={`${!openDetail && 'hidden h-0'} text-body-1 text-color-light`}>{description}</motion.p>)}
                     </AnimatePresence>
                     </motion.div>
                 </div>
 
             <div className='research-Track-line h-[0.5px] w-full bg-white'></div>
-        </div>
+        </motion.div>
         
 
     </>)

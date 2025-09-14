@@ -6,7 +6,7 @@ import ptclogo from '../../assets/image/webp/logo/mptc.webp'
 export default function Sponsor()
 {
     return (
-        <div className="Sponsor-Section my-8 ">
+        <div className="Sponsor-Section my-8 md:mx-16 ">
             <div className="grid grid-rows-3 md:grid-rows-1 md:grid-cols-3 text-color-light px-4 space-y-8">
                 <div className='flex flex-col align-center md:items-start'>
                     <h1 className="text-header-1 uppercase">SPONSOR</h1>

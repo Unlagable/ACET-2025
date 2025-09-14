@@ -1,11 +1,15 @@
 import confChair from '../../assets/image/webp/commitees/sopheap seng.webp'
 import progChair from '../../assets/image/webp/commitees/rottana ly.webp'
 import AcetButton from '../button/button'
+import { useNavigate } from 'react-router-dom'
 
 
 export default function Committees () {
+    const handleClick = () => {
+        navigate("/committees"); // programmatically navigate
+    };
     return (
-        <div className="Committees-Section overflow-clip ">
+        <div className="Committees-Section overflow-clip md:mx-16 ">
             <h1 className='text-header-1 text-color-light my-8 mx-4'>Meet the Committees</h1>
             <div className='grid grid-cols-2'>
                 <div className='flex flex-col items-center space-y-4'>
@@ -23,7 +27,9 @@ export default function Committees () {
                 {/* <div className=''>
                     <p className='text-color-light-muted justify-center flex items-center h-full'>And More!</p>
                 </div> */}
-                <AcetButton text="View All"/>   
+                <div onClick={handleClick}>
+                    <AcetButton text="View All"/>   
+                </div>
             </div>
         </div>
     )

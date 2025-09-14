@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Faq from "react-faq-component";
 import AcetButton from '../button/button';
+import { motion } from 'motion/react';
 
 
 const data = {
@@ -75,9 +76,9 @@ export default function FAQ() {
 const [viewmore, setViewmore] = useState(false);
 
     return (
-        <div className="FAQ-Section px-4 bg-color-light">
+        <div className="FAQ-Section px-4 bg-color-light md:mx-16 " id='FAQ'>
             <h1 className='text-primary text-header-1 py-4'>frequently asked questions</h1>
-            <div className={`h-58 overflow-hidden ${viewmore && "h-auto"} `}>
+            <motion.div layout className={`h-58 overflow-hidden ${viewmore && "h-auto"} `}>
                 
                 <Faq
                     data={data}
@@ -85,10 +86,10 @@ const [viewmore, setViewmore] = useState(false);
                     config={config}
                 />
 
-            </div>
+            </motion.div>
             <div className='flex justify-center p-4'>
                 <div onClick={() => setViewmore(!viewmore)} className='hover:cursor-pointer'>
-                    <AcetButton text={viewmore ? "collapse" : "More FAQ"} />
+                    <AcetButton text={viewmore ? "collapse" : "Show More"} />
                 </div>
             </div>
         </div>

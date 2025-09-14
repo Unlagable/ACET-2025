@@ -53,7 +53,7 @@ export default function ConferenceJourney() {
     Date:"13rd-14th November 2025"}
 
     return (<>
-    <div className='hidden md:block'>
+    <div className='hidden md:block md:mx-8 '>
         <h1 className="text-header-1 text-color-light pl-16 my-8 leading-[140%] ">Conference Journey</h1>
 
         {/* center indicator line */}
@@ -137,26 +137,7 @@ export default function ConferenceJourney() {
                         Date={paperDeadline.Date}
                         />
                     </div>
-                        {/* In progress bar indicator */}
-                    <div className='flex justify-start w-full hidden'>
-
-
-                    <div className="indicator">
-                        <div className='flex justify-center items-center  w-xl mt-4'>
-
-                            <div className='relative flex items-center'>
-                                <div className='circle-indicator w-4 bg-white h-4 rounded-full border-2 border-accent'></div>
-                                <div className='indicator-line w-lg bg-accent h-[1px] '></div>
-                                <div className='circle-indicator w-4 bg-white h-4 rounded-full border-2 border-accent'></div>
-                            </div>
-                        </div>
-                        <div className='flex justify-center items-center  w-xl'>
-                            <p className='text-accent capitalize text-body-2 font-bold'>In Progress</p>
-                        </div>
-                    </div>
-                    </div>
                 </div>
-            {/* end of in progess bar */}
             </div>
             {/* end of card 2 */}
 
@@ -170,26 +151,8 @@ export default function ConferenceJourney() {
                         Date={NotifyAccept.Date}
                         />
                     </div>
-                        {/* In progress bar indicator */}
-                    <div className=' justify-start w-full hidden'>
 
-
-                    <div className="indicator">
-                        <div className='flex justify-center items-center  w-xl mt-4'>
-
-                            <div className='relative flex items-center'>
-                                <div className='circle-indicator w-4 bg-white h-4 rounded-full border-2 border-accent'></div>
-                                <div className='indicator-line w-lg bg-accent h-[1px] '></div>
-                                <div className='circle-indicator w-4 bg-white h-4 rounded-full border-2 border-accent'></div>
-                            </div>
-                        </div>
-                        <div className='flex justify-center items-center  w-xl'>
-                            <p className='text-accent capitalize text-body-2 font-bold'>In Progress</p>
-                        </div>
-                    </div>
-                    </div>
                 </div>
-            {/* end of in progess bar */}
             </div>
             {/* end of card 3 */}
 
@@ -204,26 +167,7 @@ export default function ConferenceJourney() {
                         Date={cameraReady.Date}
                         />
                     </div>
-                        {/* In progress bar indicator */}
-                    <div className=' justify-start w-full hidden'>
-
-
-                    <div className="indicator">
-                        <div className='flex justify-center items-center  w-xl mt-4'>
-
-                            <div className='relative flex items-center'>
-                                <div className='circle-indicator w-4 bg-white h-4 rounded-full border-2 border-accent'></div>
-                                <div className='indicator-line w-lg bg-accent h-[1px] '></div>
-                                <div className='circle-indicator w-4 bg-white h-4 rounded-full border-2 border-accent'></div>
-                            </div>
-                        </div>
-                        <div className='flex justify-center items-center  w-xl'>
-                            <p className='text-accent capitalize text-body-2 font-bold'>In Progress</p>
-                        </div>
-                    </div>
-                    </div>
                 </div>
-            {/* end of in progess bar */}
             </div>
             {/* end of card 4 */}
 
@@ -237,26 +181,7 @@ export default function ConferenceJourney() {
                         Date={ConferenceRegistration.Date}
                         />
                     </div>
-                        {/* In progress bar indicator */}
-                    <div className=' justify-start w-full hidden'>
-
-
-                    <div className="indicator">
-                        <div className='flex justify-center items-center  w-xl mt-4'>
-
-                            <div className='relative flex items-center'>
-                                <div className='circle-indicator w-4 bg-white h-4 rounded-full border-2 border-accent'></div>
-                                <div className='indicator-line w-lg bg-accent h-[1px] '></div>
-                                <div className='circle-indicator w-4 bg-white h-4 rounded-full border-2 border-accent'></div>
-                            </div>
-                        </div>
-                        <div className='flex justify-center items-center  w-xl'>
-                            <p className='text-accent capitalize text-body-2 font-bold'>In Progress</p>
-                        </div>
-                    </div>
-                    </div>
                 </div>
-            {/* end of in progess bar */}
             </div>
             {/* end of card 5 */}
 
@@ -270,71 +195,55 @@ export default function ConferenceJourney() {
                         Date={ConferenceDate.Date}
                         />
                     </div>
-                        {/* In progress bar indicator */}
-                    <div className='justify-start w-full hidden'>
-
-
-                    <div className="indicator">
-                        <div className='flex justify-center items-center  w-xl mt-4'>
-
-                            <div className='relative flex items-center'>
-                                <div className='circle-indicator w-4 bg-white h-4 rounded-full border-2 border-accent'></div>
-                                <div className='indicator-line w-lg bg-accent h-[1px] '></div>
-                                <div className='circle-indicator w-4 bg-white h-4 rounded-full border-2 border-accent'></div>
-                            </div>
-                        </div>
-                        <div className='flex justify-center items-center  w-xl'>
-                            <p className='text-accent capitalize text-body-2 font-bold'>In Progress</p>
-                        </div>
-                    </div>
-                    </div>
                 </div>
-            {/* end of in progess bar */}
             </div>
             {/* end of card 6 */}
         </div>
     </div>
 
     {/* mobile view */}
-    <div className='md:hidden px-4 py-8 container max-w-md mx-auto'>
+    <div className='md:hidden px-4 py-8 '>
         <h1 className="text-header-1 text-color-light pl-2 mb-8 leading-[140%] ">Conference Journey</h1>
 
 
-        <div className='relative flex justify-start items-start '>
-            <div className='absolute flex justify-center w-8 top-16 h-auto '>
+        <div className='relative flex justify-center items-start container max-w-md mx-auto gap-8'>
+            <div className='relative w-8'>
 
-                <div className='w-0 border-1 h-[975px] border-white absolute top-1'></div>
+                <div className='absolute flex justify-center w-8 top-16 h-auto '>
 
-                {/* dynamic height line */}
-                <div className='w-0 border-2 h-[190px] border-accent absolute top-1 '></div>
+                    <div className='w-0 border-1 h-[975px] border-white absolute top-1'></div>
 
-                <div className='circle w-8 h-8 rounded-full bg-primary absolute border-2 border-accent '>
-                    <div className='w-4 h-4 bg-accent absolute rounded-full  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></div>
+                    {/* dynamic height line */}
+                    <div className='w-0 border-2 h-[190px] border-accent absolute top-1 '></div>
+
+                    <div className='circle w-8 h-8 rounded-full bg-primary absolute border-2 border-accent '>
+                        <div className='w-4 h-4 bg-accent absolute rounded-full  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></div>
+                    </div>
+
+                    <div className='circle w-8 h-8 rounded-full bg-primary absolute top-[190px] border-2 border-white'>
+                        <div className='w-4 h-4 bg-white absolute rounded-full  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></div>
+                    </div>
+
+                    <div className='circle w-8 h-8 rounded-full bg-primary absolute top-[380px] border-2 border-white'>
+                        <div className='w-4 h-4 bg-white absolute rounded-full  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></div>
+                    </div>
+
+                    <div className='circle w-8 h-8 rounded-full bg-primary absolute top-[570px] border-2 border-white'>
+                        <div className='w-4 h-4 bg-white absolute rounded-full  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></div>
+                    </div>
+
+                    <div className='circle w-8 h-8 rounded-full bg-primary absolute top-[780px] border-2 border-white'>
+                        <div className='w-4 h-4 bg-white absolute rounded-full  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></div>
+                    </div>
+
+                    <div className='circle w-8 h-8 rounded-full bg-primary absolute top-[970px] border-2 border-white'>
+                        <div className='w-4 h-4 bg-white absolute rounded-full  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></div>
+                    </div>
+
                 </div>
-
-                <div className='circle w-8 h-8 rounded-full bg-primary absolute top-[190px] border-2 border-white'>
-                    <div className='w-4 h-4 bg-white absolute rounded-full  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></div>
-                </div>
-
-                <div className='circle w-8 h-8 rounded-full bg-primary absolute top-[380px] border-2 border-white'>
-                    <div className='w-4 h-4 bg-white absolute rounded-full  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></div>
-                </div>
-
-                <div className='circle w-8 h-8 rounded-full bg-primary absolute top-[570px] border-2 border-white'>
-                    <div className='w-4 h-4 bg-white absolute rounded-full  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></div>
-                </div>
-
-                <div className='circle w-8 h-8 rounded-full bg-primary absolute top-[780px] border-2 border-white'>
-                    <div className='w-4 h-4 bg-white absolute rounded-full  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></div>
-                </div>
-
-                <div className='circle w-8 h-8 rounded-full bg-primary absolute top-[970px] border-2 border-white'>
-                    <div className='w-4 h-4 bg-white absolute rounded-full  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'></div>
-                </div>
-
             </div>
 
-            <div className='flex flex-col items-end gap-4 ml-10'>
+            <div className='flex flex-col items-end gap-4 '>
 
                 {confJourney.map((item) => (
                     <ConfCard Title={item.Title}
@@ -342,30 +251,7 @@ export default function ConferenceJourney() {
                     Date={item.Date}
                     />
                 ))}
-                {/* <ConfCard Title={callForPaper.Title}
-                Detail={callForPaper.Detail}
-                Date={callForPaper.Date}
-                />
-                <ConfCard Title={paperDeadline.Title}
-                Detail={paperDeadline.Detail}
-                Date={paperDeadline.Date}
-                />
-                <ConfCard Title={NotifyAccept.Title}
-                Detail={NotifyAccept.Detail}
-                Date={NotifyAccept.Date}
-                />
-                <ConfCard Title={cameraReady.Title}
-                Detail={cameraReady.Detail}
-                Date={cameraReady.Date}
-                />
-                <ConfCard Title={ConferenceRegistration.Title}
-                Detail={ConferenceRegistration.Detail}
-                Date={ConferenceRegistration.Date}
-                />
-                <ConfCard Title={ConferenceDate.Title}
-                Detail={ConferenceDate.Detail}
-                Date={ConferenceDate.Date}
-                /> */}
+
             </div>
 
 

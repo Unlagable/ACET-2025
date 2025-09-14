@@ -61,7 +61,7 @@ const responsive = {
 
 export default function Gallery (){
     return (
-        <div className="Gallery px-4 my-4">
+        <div className="Gallery px-4 my-4 md:mx-16 ">
             <h1 className="text-color-light text-header-1">GALLERY</h1>
             <PhotoProvider>
             <Carousel responsive={responsive} 
